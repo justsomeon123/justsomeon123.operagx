@@ -1,0 +1,47 @@
+{
+    "name": "justsomeon123's opera mod",
+    "description": "my custom opera settings, just messing with stuff",
+    "developer":
+    {
+        "name": "justsomeon123"
+    },
+    "icons":
+    {
+        "512": "icon_512.png"
+    },
+    "manifest_version": 3,
+    "mod":
+    {
+        "license": "license.txt",
+        "payload":
+        {
+            "shaders":
+            {
+                "Old Time Tv":
+                {
+                    "animation":
+                    {
+                        "duration": 60,
+                        "steps": 3600
+                    },
+                    "path": "shader/tv60s.txt"
+                }
+            },
+            "page_styles":
+            [
+                {
+                    "matches":
+                    [
+                        "https://*.twitter.com/*"
+                    ],
+                    "css":
+                    [
+                        "css/nomorscroll.css"
+                    ]
+                }
+            ]
+        },
+        "schema_version": 1
+    },
+    "version": "1.4.2.7"
+}
